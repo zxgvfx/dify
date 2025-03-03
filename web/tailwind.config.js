@@ -1,12 +1,12 @@
-import tailwindThemeVarDefine from './themes/tailwind-theme-var-define'
-
-/** @type {import('tailwindcss').Config} */
+// import type { Config } from 'tailwindcss'
+import commonConfig from './tailwind-common-config'
 const config = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './context/**/*.{js,ts,jsx,tsx}',
   ],
+<<<<<<< HEAD
   theme: {
     typography: require('./typography'),
     extend: {
@@ -126,6 +126,9 @@ const config = {
   corePlugins: {
     preflight: false,
   },
+=======
+  ...commonConfig,
+>>>>>>> bafa46393cc9b488be7080ba541f8795f52d8fa6
 }
 
 export default config
